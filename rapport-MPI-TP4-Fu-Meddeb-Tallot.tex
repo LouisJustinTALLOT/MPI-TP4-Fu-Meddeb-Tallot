@@ -11,13 +11,13 @@
 %------------------------------------------------------------------------------------
 %	EDIT THIS BLOCK AS REQUESTED
 %------------------------------------------------------------------------------------
-\newcommand{\studentone}{Alastair McLean}			% change to your name
-\newcommand{\studentonenumber}{123456}				% enter your student number 
-\newcommand{\studenttwo}{Steve Martin}				% change to your partner's name
-\newcommand{\studenttwonumber}{654321}				% enter your partner's student number
-\title{PHYS250 Worksheet Template}					% change to the title of the experiment
-\author{\studentone and \studenttwo}				% you don't have to change this
-\date{\today}										% this fills in today's date - don't change
+% \newcommand{\studentone}{Alastair McLean}			% change to your name
+% \newcommand{\studentonenumber}{123456}				% enter your student number 
+% \newcommand{\studenttwo}{Steve Martin}				% change to your partner's name
+% \newcommand{\studenttwonumber}{654321}				% enter your partner's student number
+\title{Matériaux pour l'Ingénieur\vspace{0.5em}\\TP n°4\vspace{0.5em}\\Compte-rendu}
+\author{Jia \textsc{Fu}, Paul \textsc{Meddeb}, Louis-Justin \textsc{Tallot}}
+\date{Mardi 15 juin 2021}
 
 
 
@@ -42,11 +42,13 @@
 %  PACKAGES
 %-------------------------------------------------------------------------------------
 \usepackage{amsmath,amsthm,amssymb,amsfonts}			% math fonts
-\usepackage[english]{babel}								% hyphenation rules for english
+\usepackage[french]{babel}								% hyphenation rules for english
+\usepackage[T1]{fontenc} 
 \usepackage{graphicx}									% for importing pdf files 
 \usepackage{siunitx}									% si units - extremely useful
-\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}	% defines the dvips color names
-\usepackage{color,soul} 								% for highlight hi - hyphenation, underlining
+% defines the dvips color names
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}	
+\usepackage{color,soul} 	% for highlight hi - hyphenation, underlining
 \setulcolor{red} 										% set underline color
 \setstcolor{green} 										% set overstriking color
 \sethlcolor{green} 										% set highlighting color
@@ -55,7 +57,7 @@
 %--------------------------------------------------------------------------------------------
 %  GRAPHICS PATH
 %--------------------------------------------------------------------------------------------
-\graphicspath{{images/}{./}}								% put your figures in a folder called figures
+\graphicspath{{images/}{./}}		% put your figures in a folder called images
 
 
 
@@ -75,28 +77,35 @@
   \null
   \thispagestyle{empty}
   \begin{center}\leavevmode
+       \vskip 2cm
        \normalfont
-       \includegraphics[width=0.35\columnwidth]{queenslogo.pdf}
-       \vskip 0.5cm   
-       \textsc{\Large PHYS250 Worksheet}\\[0.5 cm]
-	     {\large \@date\par}
+       \includegraphics[width=0.5\columnwidth]{logo_mines.png}
+       \vskip 1cm
+    %   \textsc{\Large PHYS250 Worksheet}\\[0.5 cm]
+	     {\large Mardi 15 juin 2021\par}
        \vskip 1.0cm
 	\rule{\linewidth}{0.2 mm} \\[0.4 cm]
 	{ \huge \bfseries \@title}\\
 	\rule{\linewidth}{0.2 mm} \\[1.5 cm]
 	
-	\begin{minipage}{0.5\textwidth}
-		\begin{flushleft} \large
-			\emph{Name:} \studentone\\
-			Student Number: \studentonenumber
-			\end{flushleft}
-			\end{minipage}~
-			\begin{minipage}{0.4\textwidth}
-			\begin{flushleft} \large
-			\emph{Partner:} \studenttwo\\
-			Student Number: \studenttwonumber
-		\end{flushleft}
-	\end{minipage}\\[2 cm]
+	\vspace{1cm}
+	
+	\Large{\emph{Étudiants} : Jia \textsc{Fu}, Paul \textsc{Meddeb}, Louis-Justin \textsc{Tallot}}
+	\vspace{0.5cm}
+	\Large{\emph{Encadrants} : Robin \textsc{Mallick}, Mohamed \textsc{Shokeir}}
+	
+% 	\begin{minipage}{0.5\textwidth}
+% 		\begin{flushleft} \large
+% 			\emph{Name:} \studentone\\
+% 			Student Number: \studentonenumber
+% 			\end{flushleft}
+% 			\end{minipage}~
+% 			\begin{minipage}{0.4\textwidth}
+% 			\begin{flushleft} \large
+% 			\emph{Partner:} \studenttwo\\
+% 			Student Number: \studenttwonumber
+% 		\end{flushleft}
+% 	\end{minipage}\\[2 cm]
    \end{center}
    \vfill
    \null
