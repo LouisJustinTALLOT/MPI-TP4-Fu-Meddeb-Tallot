@@ -23,4 +23,6 @@ plt.title('Evolution des défauts dans les échantillons\nselon les traitements 
 
 plt.tight_layout()
 plt.legend()
-plt.show()
+# plt.show()
+
+tikzplotlib.save("sections/proportions_defauts.tex")
