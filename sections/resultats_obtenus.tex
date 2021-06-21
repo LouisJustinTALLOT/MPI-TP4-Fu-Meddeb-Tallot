@@ -16,7 +16,7 @@ et notamment sa résistance au fluage.
 Étudions tout d'abord les propriétés du brut sortant de la fonderie.\\
 
 
-\begin{figure}[htbp]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.75\textwidth]{images_optique/brut2.pdf}
     \caption{Echantillon brut de fonderie vu au microscope optique}
@@ -70,7 +70,7 @@ Les espaces inter-dendritiques vont ensuite se former,  plus riches en phase $\g
 suivis enfin par les agrégats eutectiques composés de phase $\gamma'$.
 
 
-\begin{figure}[htbp]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.75\textwidth]{images/diagramme_phase.png}
     \caption{Diagramme Ni-Al avec les structures cristallines des phases $\gamma$ et $\gamma'$}
@@ -90,8 +90,30 @@ certaines zones se fait sans que le liquide ou la diffusion aient eu le
 temps de combler certains vides créés par la contraction du liquide qui
 se refroidit. Nous avons donc un certain nombre de lacunes et de pores qui
 apparaît ; ce nombre varie en fonction de la vitesse de refroidissement 
-de la pièce.
+de la pièce.\\
 
+
+Observons maintenant l'état des dendrites dans notre échantillon, grâce au 
+traitement chimique à l'eau régale que nous avons effectué.\\ 
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 0.55\textwidth]{brut_dendrites.pdf}
+    \caption{Observation des dendrites sur l'échantillon brut de fonderie
+     au microsope optique, après traitement chimique à l'eau régale}
+    \label{fig:brut_dendrites_optique}
+\end{figure}
+
+Nous obtenons un résultat clair : les dendrites (sombres, composées majoritairement
+de phase $\gamma$) sont extrèmement développées et marquées en constrate de 
+l'espace inter-dendritique (de couleur claire), qui a été attaqué par l'acide. 
+Leur forme est dû au mécanisme de solidification successive de la pièce, 
+lorsque le liquide se refroidit. Les dendrites croissent alors en partant 
+de la base, et adoptent cette forme en sapin de Noël. Le matériau est donc inhomogène, 
+ce qui nuit à ses qualités mécaniques. \\
+
+%TODO : MEB
 
 \subsection*{Echantillon remis en solution}
 
@@ -107,7 +129,7 @@ permettre d'accèlérer la diffusion dans l'alliage, et donc faciliter le mouvem
 
 Observons donc notre échantillon ayant subit une étape de remise en solution au microscope optique.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.55\textwidth]{images_optique/res.pdf}
     \caption{Echantillon après traitement de remise en solution}
@@ -131,11 +153,13 @@ Nous obtenons les résultats suivants à l'aide d'ImageJ :
 \begin{table}[H]
     \centering
     \caption{Proportion des différents défauts dans l'échantillon après remise en solution}
-    \begin{tabular}{c|c}
+    \begin{tabular}{|c|c|}
+        \hline
         \textbf{Type de défaut}  & \textbf{Proportion observée}  \\
         \hline
         Pore               & 0,525  \% \\
         Agrégat eutectique & 0,0041 \% \\
+        \hline
     \end{tabular}
     \label{fig:proportion_defauts_RES}
 \end{table}
@@ -145,12 +169,31 @@ Ces mesures corroborent nos observations visuelles.\\
 Nous pouvons donc produire le graphique de comparaison suivant :
 
 
-\begin{figure}[htbp]
+\begin{figure}[H]
     \centering
     \input{sections/proportions_defauts.tex}
-    \caption{Évolution des défauts dans les échantillons selon les traitements thermiques appliqués}
+    \caption{Évolution des défauts dans les échantillons selon les traitements thermiques appliqués\\}
     \label{fig:evolution_proportion_defauts_brut_RES}
 \end{figure}
+
+À nouveau, nous pouvons étudier notre échantillon après l'attaque chimique, 
+afin de déterminer l'influence de la remise en solution sur les dendrites.\\
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 0.55\textwidth]{images_optique/res_dendrites.pdf}
+    \caption{Observation des dendrites sur l'échantillon ayant subi une remise en solution
+    au microsope optique, après traitement chimique à l'eau régale\\}
+    \label{fig:res_dendrites_optique}
+\end{figure}
+
+Nous observons que, bien que la forme originelle des dendrites soit encore discernable, 
+celle-ci est beaucoup plus atténuée. Nous avons donc réussi à homogénéiser nettement
+la composition chimique de notre pièce, en enlevant d'une part les agrégats eutectiques, 
+et d'autres part en "adoucissant" la frontière entre dendrites et espaces inter-dendritiques.
+
+
+\subsection*{Conclusion sur les traitements thermiques}
 
 La remise en solution permet donc d'améliorer nettement la qualité du matériau en
 homogénéisant sa structure et en diminuant drastiquement le nombre d'agrégats
