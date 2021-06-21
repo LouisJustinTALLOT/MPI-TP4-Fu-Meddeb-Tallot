@@ -2,9 +2,8 @@ Nous avons ainsi étudié trois types d'échantillons différents :\\
 \begin{itemize}
     \item Le brut, monocristallin, en sortie de fonderie
     \item L'alliage après remise en solution (premier traitement thermique)
-    \item L'alliage en fin de traitement, après les deux revenus.\\\\
+    \item L'alliage en fin de traitement, après les deux revenus.\\
 \end{itemize}
-
 
 
 Nous devons donc étudier leur microstructure pour déterminer l'influence des 
@@ -14,14 +13,14 @@ et notamment sa résistance au fluage.
 
 \subsection*{Echantillon brut de fonderie}
 
-Étudions tout d'abord les propriétés du brut après fonderie.\\\\
+Étudions tout d'abord les propriétés du brut sortant de la fonderie.\\
 
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.75\textwidth]{images_optique/brut.pdf}
+    \includegraphics[width=0.75\textwidth]{images_optique/brut2.pdf}
     \caption{Echantillon brut de fonderie vu au microscope optique}
-    \label{}
+    \label{fig:brut_optique}
 \end{figure}
 
 
@@ -31,44 +30,51 @@ et présente peu de défauts. Cependant, la surface possède
 c'est à dire des trous à la surface de l'échantillon. Il y a à ces endroits 
 des lacunes importantes dans la maille cristalline, et il manque donc 
 une petite portion du matériau. Nous observons également de plus 
-petites tâches grises : il s'agit d'agrégats eutectiques, formés lors du refroidissement du liquide.
+petites tâches grises : il s'agit d'agrégats eutectiques, formés 
+lors du refroidissement du liquide.\\
 
 
-
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.75\textwidth]{images_optique/brut2.pdf}
-    \caption{Echantillon brut de fonderie vu au microscope optique}
-    \label{<label>}
-\end{figure}
 
 On mesure la proportion de défauts visibles au microscope optique à l'aide du 
 logiciel d'analyse d'images ImageJ. Nous obtenons les résultats suivants : \\
-\begin{table}
+
+
+\begin{table}[H]
     \centering
     \caption{Proportion des différents défauts dans l'échantillon brut de fonderie}
-    \begin{tabular}{c|c}
+    \begin{tabular}{|c|c|}
+        \hline
         \textbf{Type de défaut}  & \textbf{Proportion observée}  \\
         \hline
-        Pore               & 0,340 \% \\
-        Agrégat eutectique & 0,252 \% \\
+        Pores               & $0,340$ \% \\
+        Agrégats eutectiques & $0,252$ \% \\
+        \hline
     \end{tabular}
-
+    \\
+    \label{tab:proportions_defauts_brut}
 \end{table}
 
-Nous voyons ainsi une proportion assez nette de défauts au sortir de la fonderie. 
+
+Nous voyons ainsi qu'il y a une quantité significative de défauts au sortir de la fonderie.\\
+
+
 Les agrégats eutectiques apparaissent pendant le refroidissement 
 et la solidification du liquide. En effet, la vitesse de refroidissement dans 
 la pièce est très difficile à contrôler précisément, et est donc nécessairement
 inhomogène. Ainsi, certaines zones vont commencer à solidifier avant d'autres, et 
 vont donc modifier la composition chimique du liquide qui les entoure. 
+Les dendrites, qui sont les parties qui solidifient en premier, sont composées 
+principalement de phase $\gamma$ (d'après le diagramme de phases nickel-aluminium, 
+figure \ref{fig:diagramme_phases_Ni_Al}), ce qui va modifier l'équilibre dans le liquide.
+Les espaces inter-dendritiques vont ensuite se former,  plus riches en phase $\gamma'$, 
+suivis enfin par les agrégats eutectiques composés de phase $\gamma'$.
 
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.75\textwidth]{images/diagramme_phase.png}
     \caption{Diagramme Ni-Al avec les structures cristallines des phases $\gamma$ et $\gamma'$}
-    \label{<label>}
+    \label{fig:diagramme_phases_Ni_Al}
 \end{figure}
 
 % Quand on regarde le diagramme de phases nickel-aluminium, nous voyons que 
@@ -77,11 +83,6 @@ vont donc modifier la composition chimique du liquide qui les entoure.
 % donc la composition est celle de l'assemblage $\gamma$/$\gamma'$, et d'autres zones 
 % contenant uniquement la phase $\gamma'$ qui correspondent aux agrégats eutectiques.
 
-De plus, les dendrites, qui sont les parties qui solidifient en premier, sont composées 
-principalement de phase $\gamma$ (d'après le diagramme de phases nickel-aluminium), 
-ce qui va modifier l'équilibre dans le liquide.
-Les espaces inter-dendritiques vont ensuite se former,  plus riches en phase $\gamma'$, 
-suivis enfin par les agrégats eutectiques composés de phase $\gamma'$.
 
 Quant aux pores, leur apparition est liée à un flux trop faible de soluté 
 dans les espaces inter-dendritiques, c'est-à-dire que la solidification de 
@@ -110,7 +111,7 @@ Observons donc notre échantillon ayant subit une étape de remise en solution a
     \centering
     \includegraphics[width=0.55\textwidth]{images_optique/res.pdf}
     \caption{Echantillon après traitement de remise en solution}
-    \label{<label>}
+    \label{fig:RES_optique}
 \end{figure}
 
 Nous voyons que les agrégats eutectiques, très visibles sur le brut, ont quasiment disparu.
@@ -136,7 +137,7 @@ Nous obtenons les résultats suivants à l'aide d'ImageJ :
         Pore               & 0,525  \% \\
         Agrégat eutectique & 0,0041 \% \\
     \end{tabular}
-
+    \label{fig:proportion_defauts_RES}
 \end{table}
 
 Ces mesures corroborent nos observations visuelles.\\
@@ -148,6 +149,15 @@ Nous pouvons donc produire le graphique de comparaison suivant :
     \centering
     \input{sections/proportions_defauts.tex}
     \caption{Évolution des défauts dans les échantillons selon les traitements thermiques appliqués}
-    \label{<label>}
+    \label{fig:evolution_proportion_defauts_brut_RES}
 \end{figure}
+
+La remise en solution permet donc d'améliorer nettement la qualité du matériau en
+homogénéisant sa structure et en diminuant drastiquement le nombre d'agrégats
+eutectiques, qui sont des endroits autours desquels la concentration n'est pas 
+homogène, et dont la composition ne correspond pas au mélange $\gamma$/$\gamma'$
+que l'on veut obtenir pour garantir les bonnes propriétés mécaniques de la pièce 
+(résistance au fluage, résistance aux dislocations et déformations).
+
+
 
