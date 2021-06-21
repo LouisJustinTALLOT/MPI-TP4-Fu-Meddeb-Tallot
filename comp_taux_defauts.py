@@ -17,9 +17,9 @@ plt.bar(ind + width, [0.252, 0.0041], width, label="Agrégats eutectiques", alph
 plt.xticks(ind + width / 2, ["Brut", "Remis en solution"])
 plt.gca().yaxis.set_major_formatter(mtick.PercentFormatter())
 
-plt.xlabel("Etape de traitement thermique de l'échantillon")
+plt.xlabel("Étape de traitement thermique de l'échantillon")
 plt.ylabel('Proportion surfacique du type de défaut')
-plt.title('Evolution des défauts dans les échantillons\nselon les traitements thermiques appliqués')
+# plt.title('Évolution des défauts dans les échantillons\nselon les traitements thermiques appliqués')
 
 plt.tight_layout()
 plt.legend()
