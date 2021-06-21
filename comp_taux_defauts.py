@@ -11,7 +11,7 @@ width = 0.3
 
 
 plt.bar(ind,         [0.340, 0.525],  width, label="Pores"               , alpha=0.9)
-plt.bar(ind + width, [0.252, 0.0041], width, label="Agrégats eutectiques", alpha=0.9)
+plt.bar(ind + width, [0.252, 0.041], width, label="Agrégats eutectiques", alpha=0.9)
 
 
 plt.xticks(ind + width / 2, ["Brut", "Remis en solution"])
