@@ -57,9 +57,6 @@
 \rfoot{\vspace{-0.7 cm}\thepage}
 \lfoot{\includegraphics[width = 3 cm]{logo_mines.png}}
 
-\usepackage{remreset}
-\makeatletter \@removefromreset{figure}{chapter}\makeatother
-\renewcommand\thefigure{\arabic{figure}}
 
 %  GRAPHICS PATH
 
@@ -132,6 +129,8 @@
 
 
 
+\counterwithout{figure}{chapter}
+\counterwithout{table}{chapter}
 
 \section*{Introduction générale}
 \input{sections/introduction_generale}
