@@ -41,6 +41,13 @@
 \setstcolor{green} 										% set overstriking color
 \sethlcolor{green} 										% set highlighting color
 \usepackage{tabularx}
+
+\usepackage{pgfplots}
+\DeclareUnicodeCharacter{2212}{−}
+\usepgfplotslibrary{groupplots,dateplot}
+\usetikzlibrary{patterns,shapes.arrows}
+\pgfplotsset{compat=newest}
+
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
@@ -48,6 +55,8 @@
 \lhead{MPI - TP n°4 - Compte-rendu}
 \rfoot{\vspace{-0.7 cm}\thepage}
 \lfoot{\includegraphics[width = 3 cm]{logo_mines.png}}
+
+
 
 %  GRAPHICS PATH
 
